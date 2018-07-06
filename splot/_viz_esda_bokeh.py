@@ -153,8 +153,8 @@ def _plot_choropleth_fig(geo_source, attribute, bin_labels, bounds,
     return fig
 
 
-def lisa_cluster(moran_loc, df, p=0.05, region_column='', title=None,
-                 plot_width=500, plot_height=500, tools=''):
+def lisa_cluster(moran_loc, df, p=0.05, title=None,
+                 plot_width=500, plot_height=500, region_column='', tools=''):
     '''
     Lisa Cluster map, coloured by local spatial autocorrelation
 
@@ -177,6 +177,11 @@ def lisa_cluster(moran_loc, df, p=0.05, region_column='', title=None,
     plot_height : int, optional
         Height dimension of the figure in screen units/ pixels.
         Default = 500
+    region_column : str, optional
+        Columname in geodataframe containing information that will be displayed
+        through Bokeh hover, e.g. columnname containing region names. Default = ''.
+    tools : str, optional
+        Specific Bokeh tooltips, eg. 'hover'. Default =''
 
     Returns
     -------
