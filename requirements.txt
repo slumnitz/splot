@@ -1,7 +1,4 @@
-numpy
-pandas 
-geopandas
-matplotlib
-seaborn
-bokeh
-ipywidgets
+--index-url https://pypi.python.org/simple/
+
+-e https://github.com/pysal/splot.git
+-e .
