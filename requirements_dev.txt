@@ -8,5 +8,3 @@ nbconvert
 sphinx_bootstrap_theme
 sphinxcontrib-bibtex
 numpydoc
-descartes
-rtree
